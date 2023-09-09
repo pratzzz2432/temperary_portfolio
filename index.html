@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratiksha - Software Developer Portfolia</title>
+    <link rel="icon" type="image/x-icon" href="a-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Inter:wght@300&family=Poppins:wght@100;400&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />             -->
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: rgb(22, 5, 39);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 170px;
+            /* background-color: rgb(11, 2, 18); */
+
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        nav ul li{
+            margin:0px 20px;
+            list-style: none;
+            border: 2px solid rgb(22, 5, 39);
+            padding:8px 15px;
+        }
+        li:hover{
+            color: rgb(101, 53, 146);
+            margin:0px 20px;
+            list-style: none;
+            border: 2px solid rgb(22, 5, 39);
+            padding:8px 15px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .left{
+            font-size: 30px;
+            font-weight: 1000;
+            display:flex;
+            margin-top:13px;
+        }
+        .right{
+            font-weight: 500;
+            margin-left: 250px;
+            /* background-color: red; */
+        }
+        /* .rr{
+            background-color: aliceblue;
+        } */
+        .first{
+            display: flex;
+            flex-direction: column;
+            margin: 8vh 0;
+            align-items:center;
+        }
+        .first > div{
+            width: 60%;
+            
+         
+        }
+        .leftsec{
+            font-size: 50px;
+            /* background-color: red; */
+            
+        }
+        .rightsec{
+          text-align: center;
+        }
+        .purple{
+            color:rgb(121, 70, 121);
+        }
+        #element{
+            color:rgb(121, 70, 121);
+            font-weight: 1000;
+        }
+        .intro{
+            text-align: center;
+            margin: auto;
+            font-size:50px;
+        }
+        .slogan{
+            text-align: center;
+            font-size: larger;
+        }
+        /* button{
+            text-decoration: none;
+            border: 2px salmon;
+            background-color:rgb(22, 5, 39);
+            color: white;
+            teex
+        } */
+        #hello{
+            border: 2px solid white;
+            border-radius: 50px;
+            padding:8px 15px;
+        }
+        #hello:hover{
+            border: 2px solid rgb(121, 70, 121);
+            border-radius: 50px;
+            padding:8px 15px;
+            background-color: rgb(121, 70, 121);
+        }
+        .second{
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(37, 8, 65);
+            padding-bottom: 350px;
+        }
+        .gray{
+            color: grey;
+        }
+        .second h1{
+            font-size:30px;
+        }
+        p{
+            padding:0 100px;
+        }
+        .projects{
+            background-color: rgb(22, 5, 39);
+            border-radius: 25px;
+            box-shadow: 5px 10px 5px 5px rgb(121, 70, 121);
+            margin: 50px;
+            transform: translateY(-300px);
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            /* margin-bottom: 0px; */
+        }
+        .projects > div{
+            /* width: 30%; */
+            margin: 50px;
+            /* margin-left:3.5vw; */
+            /* border:1px solid white; */
+        }
+        .name{
+            color: rgb(121, 70, 121);
+        }
+        .footfirst{
+            background-color: rgb(22, 5, 39);
+            border-radius: 25px;
+            box-shadow: 5px 1px 5px 5px rgb(121, 70, 121);
+            margin: 50px;
+            transform: translateY(120px);
+            display: flex;
+            text-align: center;
+        }
+        .footfirst > div{
+            width: 30%;
+            margin: 50px;
+            margin-left:3.5vw;
+        }
+        button{
+            padding: 15px 30px;
+            border-radius: 50px;
+            background-color: rgb(121, 70, 121);
+            border:0px solid rgb(121, 70, 121);
+        }
+        button:hover{
+            padding: 15px 30px;
+            border-radius: 50px;
+            background-color:rgb(100, 52, 100);
+            border:0px solid rgb(121, 70, 121);
+        }
+        
+        .footsec{
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(37, 8, 65);
+            padding:180px 0px 30px 0px;
+        }
+        .fa{
+            color:white;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .fa:hover{
+            color:rgb(101, 53, 146);
+            /* border: 5px solid red; */
+            padding: 20px;
+            font-size: 30px;
+        }
+        .container{
+            padding: 50px;
+            text-align: center;
+            background-color: rgb(37, 8, 65);
+            padding-bottom: 300px;
+            /* transform: translateY(-220px); */
+            
+        }
+        .myproject{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap: 50px;
+            margin: 50px;
+            transform: translateY(-300px);
+            background-color: rgb(22, 5, 39);
+            border-radius: 25px;
+            box-shadow: 5px 10px 5px 5px rgb(121, 70, 121);
+            text-align: center;
+            padding: 50px;
+        }
+        .box{
+            display: grid;
+        }
+        .box img{
+            height: 100%;
+            width: 100%;
+            border-radius:20px;
+        }
+
+        .work{
+            padding: 50px;
+            text-align: center;
+            /* background-color: red; */
+            transform: translateY(-200px);
+        }
+        .fab{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border: 2px solid white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: rgb(100, 52, 100);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href=""><img src="a-high-resolution-logo-white-on-transparent-background.png" alt="" height="65vw"></a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li id="hello"><a href="">Say Hello</a></li>
+                </ul>
+            </div>
+            <!-- <div class="rr"><a href=""><img src="dark-mode.png" alt="" height="50px"></a></div> -->
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="fab"><a href="#"><i class='fa-solid fa-message'></i></a></div>
+        <section class="first">
+           
+            <div class="intro">Hi, I am <span class="purple"><b>PRATIKSHA.!</b>.</b></span></div>    
+            <div class="leftsec">A passionate <span id="element"><b></b></span>
+            </div>
+            <div class="slogan">I design, I code, and I love what I do.</div>
+            <div class="rightsec">
+                <img src="programmer.png" alt="" height="300rw">
+            </div>
+        </section>
+        <section class="second" id="about">
+            <span class="gray">Know more about me</span>
+            <h1>About me</h1>
+            <br>
+            <p>citationem velit, rerum vel nam neque minima iste quibusdam error ipsum facere vero provident inventore ea ipsam tempore totam aliquam eius voluptatibus quo perferendis ipsa! Ex, quia facilis laboriosam exercitationem atque tenetur laborum numquam asperiores ratione eum nam in provident consequuntur architecto ipsum dolorum dicta quisquam sapiente earum expedita quod eveniet! Tempora tempore, perspiciatis vero deleniti veritatis quaerat esse porro maxime laborum minima fugiat! Incidunt explicabo dolorem sed cum neque alias officia aliquam quas fugit perferendis fuga natus quibusdam recusandae esse placeat tenetur necessitatibus, reiciendis a fugiat! Esse, delectus? Atque expedita id voluptas vitae reprehenderit molestiae fuga, minima quae deserunt quo, totam corporis laboriosam enim exercitationem eos modi ipsum excepturi eligendi nobis? Exercitationem error omnis necessitatibus incidunt repudiandae nostrum non, doloribus distinctio possimus. Iure officia amet necessitatibus quas maxime expedita assumenda a facilis mollitia sequi eligendi eos fuga sunt consequatur accusamus dicta odit excepturi, vel sit temporibus. Reprehenderit perspiciatis quo provident atque vitae beatae porro hic? Voluptate rerum expedita cupiditate quo optio mollitia reiciendis beatae ducimus aperiam ipsum. Quibusdam soluta enim dolor ipsam quia asperiores.</p>
+        </section>
+
+        <div class="projects" >
+            <div class="firstproj"><img src="c-logo-icon-28389.png" alt="" height="60px">
+                <h3>Programmer</h3>
+                <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quidem voluptate.
+                <br>
+                <br>
+                <h4>Languages I speak</h4>
+                <div class="name">C, C++, JavaScript, Java</div>
+                <br>
+                <h4>Tools I use</h4>
+                <div class="name">hfjflshf<br>hfgjdksl<br>qwertyuiot<br>hfgjdksl<br>qwertyuiot</div>
+            </div>
+            <div class="secondproj"><img src="pngwing.com.png" alt=""   height="65px">
+                <h3>Web Developer</h3>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugiat.
+                <br>
+                <br>
+                <h4>Languages I speak</h4>
+                <div class="name">HTML, CSS, JavaScript</div>
+                <br>
+                <h4>Tools I use</h4>
+                <div class="name">hfjflshf<br>hfgjdksl<br>qwertyuiot<br>hfgjdksl<br>qwertyuiot</div>
+            </div>
+            <div class="thirdproj"><img src="pngwing.com (1).png" alt=""    height="65px">
+                <h3>Android Developer</h3>
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, facilis.
+                <br>
+                <br>
+                <h4>Languages I speak</h4>
+                <div class="name">Java</div>
+                <br>
+                <h4>Tools I use</h4>
+                <div class="name">hfjflshf<br>hfgjdksl<br>qwertyuiot <br>hfgjdksl<br>qwertyuiot</div>
+            </div>
+        </div>
+
+        <section class="work">
+            <h1>I am open to work</h1>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione eveniet ea tenetur. Repellendus, dolore hic incidunt iure soluta doloribus deleniti repudiandae corporis non, quas animi vitae enim mollitia aspernatur molestiae.</p>
+            <br>
+            <br>
+            <p>If you find my profile interesting.</p>
+            <br>
+            <button><h2><a href="">Hire Me</a></h2></button>
+        </section>
+
+        <div class="container" id="project">
+            <h1>Projects</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, nam fuga? Sint quod, similique corporis cum sit error iure harum culpa cumque voluptas sequi provident? Exercitationem ducimus praesentium quibusdam non explicabo! Nobis dolores eos ratione dolorem blanditiis expedita ad facere vitae commodi quasi, sit earum incidunt reprehenderit esse numquam dicta dolore, quae inventore eum. Reiciendis enim officiis, harum obcaecati temporibus nulla earum impedit eveniet tenetur dolores fugiat ut nostrum vel. Modi quam sit quia fugit odit aut error earum dolorem hic illo, corrupti eaque illum similique dicta, dolore ratione eveniet beatae praesentium sequi sapiente! Accusamus a inventore omnis accusantium quibusdam.</p>
+        </div> 
+        <div class="myproject">
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+            <div class="box"><img src="istockphoto-1452604857-612x612.webp" alt="" height="235px"></div>
+           
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="footfirst">
+                <div class="dopro"><h2>Start a project?</h2></div>
+                <div class="doprointro">Interested in working together? We should queue up a time to chat.</div>
+                <div class="doproconf"><button><h2><a href="">Let's do this</a></h2></button></div>
+            </div>
+            <div class="footsec">
+                <div class="logo"><img src="a-high-resolution-logo-white-on-transparent-background.png" alt="" height="65vw"></div>
+                <br>
+                <h3>learning, & leveling up one day at a time.</h3>
+                <br>
+                <div class="contacts">
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-github"></a>
+                </div>
+                <br>
+                <br>
+                <span class="gray">Designed and Developed by me &#169 Ayush Raj 2023</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+         strings: ['Web Developer.', 'Software Developer.'],
+        typeSpeed: 50,
+        });
+  </script>
+
+</body>
+</html>
